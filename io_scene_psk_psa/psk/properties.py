@@ -81,7 +81,7 @@ class PskImportMixin:
         name='Vertex Color Space',
         options=set(),
         description='The source vertex color space',
-        default='SRGBA',
+        default='LINEAR',
         items=vertex_color_space_items
     )
     should_import_vertex_normals: BoolProperty(
@@ -134,7 +134,7 @@ class PskImportMixin:
     )
     scale: FloatProperty(
         name='Scale',
-        default=1.0,
+        default=0.01,
         soft_min=0.0,
     )
     bdk_repository_id: StringProperty(
